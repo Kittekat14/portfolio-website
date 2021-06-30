@@ -1,0 +1,127 @@
+
+#path218, #path210, #path222, #path202 { 
+  animation: 2s rainbow1 infinite alternate ease;
+}
+#path278, #path270, #path250, #path310, #path206 {
+  animation: 2s rainbow2 infinite alternate ease;
+}
+#path294, #path290, #path254, #path246, #path266, #path214 {
+  animation: 2s rainbow3 infinite alternate ease;
+}
+#path286, #path262, #path258, #path282, #path298, #path238 {
+  animation: 2s rainbow4 infinite alternate ease;
+}
+#path306, #path226, #path230, #path234, #path242 {
+  animation: 2s rainbow5 infinite alternate ease;
+}
+@keyframes rainbow1 {
+  0% {
+    fill: #0000ff;
+  }
+  25% {
+    fill: #00ff00;
+  }
+  50% {
+    fill: #ffff00;
+  }
+  75% {
+    fill: #ff7f00;
+  }
+  100% {
+    fill: #ff0000;
+  }
+}
+@keyframes rainbow2 {
+  0% {
+    fill: #00ff00;
+  }
+  25% {
+    fill: #ffff00;
+  }
+  50% {
+    fill: #ff7f00;
+  }
+  75% {
+    fill: #ff0000;
+  }
+  100% {
+    fill: #0000ff;
+  }
+}
+@keyframes rainbow3 {
+  0% {
+    fill: #ffff00;
+  }
+  25% {
+    fill: #ff7f00;
+  }
+  50% {
+    fill: #ff0000;
+  }
+  75% {
+    fill: #0000ff;
+  }
+  100% {
+    fill: #00ff00;
+  }
+}
+@keyframes rainbow4 {
+  0% {
+    fill: #ff7f00;
+  }
+  25% {
+    fill: #ff0000;
+  }
+  50% {
+    fill: #0000ff;
+  }
+  75% {
+    fill: #00ff00;
+  }
+  100% {
+    fill: #ffff00;
+  }
+}
+@keyframes rainbow5 {
+  0% {
+    fill: #ff0000;
+  }
+  25% {
+    fill: #0000ff;
+  }
+  50% {
+    fill: #00ff00;
+  }
+  75% {
+    fill: #ffff00;
+  }
+  100% {
+    fill: #ff7f00;
+  }
+}
+
+#path198 {
+  animation: plane-move 10s -1s infinite normal ease;
+}
+@keyframes plane-move {
+  from {
+    transform: translate(-500px, -70px);
+  }
+  to {
+    transform: translate(200px, 70px);
+  }
+}
+
+#path526, #path530 {
+  animation: wheel 10s infinite reverse linear;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+@keyframes wheel {
+  from {
+  transform: rotateZ(0deg);
+  }
+  to {
+  transform: rotateZ(360deg);
+  }
+}
