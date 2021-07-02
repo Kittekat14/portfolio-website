@@ -176,7 +176,7 @@ a[role="menuitem"]:hover::before {
       grid-row: 3 / 3;
     }
   .project-list__item:last-child ul {
-    list-style:circle;
+    list-style: none;
   }
   .project-link {
       background-color: var(--project-link-color);
