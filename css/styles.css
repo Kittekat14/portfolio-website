@@ -267,9 +267,7 @@ main {
   max-width: 90%;
   margin: 0 auto;
 }
-a {
-  cursor: pointer;
-}
+
 .about-text {
   margin: auto var(--lg-margin);
   text-align: justify;
