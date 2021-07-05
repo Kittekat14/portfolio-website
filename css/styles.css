@@ -85,6 +85,7 @@ body {
 .navigation-list__item:hover, .navigation-list__item:focus {
   color: var(--secondary-link-color);
   font-size: larger;
+  cursor: pointer;
 }
 .navigation-list__item:active {
   color: var(--active-link-color);
@@ -270,7 +271,9 @@ main {
   max-width: 90%;
   margin: 0 auto;
 }
-
+a:hover {
+  cursor: pointer;
+}
 .about-text {
   margin: auto var(--lg-margin);
   text-align: justify;
