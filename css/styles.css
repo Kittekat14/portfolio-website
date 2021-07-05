@@ -163,7 +163,6 @@ a[role="menuitem"]:hover::before {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    grid-gap: 20px;
     margin: var(--lg-margin);
     }
   .project-list__item {
@@ -199,6 +198,7 @@ a[role="menuitem"]:hover::before {
     @media all and (max-width: 499px) {
       .project-list {
         grid-template-columns: 1fr;
+        grid-gap: 10px;
       }
       .project-list__item:last-child {
         grid-column: 1 / 1;
@@ -208,6 +208,7 @@ a[role="menuitem"]:hover::before {
     @media all and (min-width: 500px) and (max-width: 767px) {
       .project-list {
         grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
       }
       .project-list__item:last-child {
         grid-column: 1 / 3;
@@ -217,6 +218,7 @@ a[role="menuitem"]:hover::before {
     @media all and (min-width: 768px) and (max-width: 1279px) {
       .project-list {
         grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 10px;
       }
       .project-list__item:last-child {
         grid-column: 1 / 4;
@@ -226,6 +228,7 @@ a[role="menuitem"]:hover::before {
     @media all and (min-width: 1280px) and (max-width: 1449px) {
       .project-list {
         grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 10px;
       }
       .project-list__item:last-child {
         grid-column: 1 / 4;
@@ -235,7 +238,7 @@ a[role="menuitem"]:hover::before {
     @media all and (min-width: 1450px) {
       .project-list {
         grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 10px;
+        grid-gap: 20px;
         margin: var(--md-margin);
       }
       .project-list__item:last-child {
