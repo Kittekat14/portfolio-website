@@ -182,17 +182,17 @@ a[role="menuitem"]:hover::before {
       background-color: var(--project-link-color);
       border-radius: var(--border-radius);
       padding: 6px;
-      border: none;
+      margin: 3px;
+      border: 1px solid #cdcdcd;
       box-shadow: 0 2px 6px var(--box-shadow-color);
       text-decoration: none;
       font-weight: bold;
       color: var(--box-shadow-color);
+      display: inline-block;
     }
   .project-link:hover {
       background-color: var(--secondary-link-color);
-    }
-  .project-link {
-      display: inline-block;
+      border: none;
     }
   
    /*  Media Queries for Grid support */
