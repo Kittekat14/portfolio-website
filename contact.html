@@ -37,25 +37,27 @@
   <section class="contact-section">
 		<div class="form-container">
 			<h3 style="text-align: center;">Get In Touch!</h3>
+      <div id="contact-form">
+        <!-- Die Konfiguration für den Formular-Chef -->
+        <form action="https://www.formular-chef.de/Formular-Chef.cgi" method="post" enctype="multipart/form-data">
+          
+          <input type="hidden" name="empfaenger" value="katihofstetter@gmail.com">
 
-			<form id="contact-form">
-				<a name="contact"></a>
+          <label>Name</label>
+          <input class="input-field" type="text" name="name">
 
-				<label>Name</label>
-				<input class="input-field" type="text" name="name">
+          <label>Subject</label>
+          <input class="input-field" type="text" name="subject">
 
-				<label>Subject</label>
-				<input class="input-field" type="text" name="subject">
+          <label>Email</label>
+          <input class="input-field" type="text" name="email">
 
-				<label>Email</label>
-				<input class="input-field" type="text" name="email">
+          <label>Message</label>
+          <textarea class="input-field" name="message"></textarea>
 
-				<label>Message</label>
-				<textarea class="input-field" name="message"></textarea>
-
-				<input id="submit-btn" type="submit" value="Send">
-			</form>
-		</div>
+          <input id="submit-btn" type="submit" value="Send">
+        </form>
+		  </div>
 	</section>
 
 
