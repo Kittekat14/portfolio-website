@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="css/style.production.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
    
 </head>
 
@@ -33,14 +33,38 @@
 <main>
 
   <h1>Contact</h1>
-  <h2>Here you can find me:</h2>
+  
+  <section class="contact-section">
+		<div class="form-container">
+			<h3 style="text-align: center;">Get In Touch</h3>
 
-    <div class="contact-info">
+			<form id="contact-form">
+				<a name="contact"></a>
+
+				<label>Name</label>
+				<input class="input-field" type="text" name="name">
+
+				<label>Subject</label>
+				<input class="input-field" type="text" name="subject">
+
+				<label>Email</label>
+				<input class="input-field" type="text" name="email">
+
+				<label>Message</label>
+				<textarea class="input-field" name="message"></textarea>
+
+				<input id="submit-btn" type="submit" value="Send">
+			</form>
+		</div>
+	</section>
+
+
+    <section class="contact-info">
         <a href="tel:+4917634738658">Phone: +4917634738658</a><br>
         <a href="mailto:katrin_hofstetter(at)gmx(dot)de">Mail: katrin_hofstetter@gmx.de</a><br>
         <a href="skype:toasthawwai">Skype: toasthawwai</a><br>
         <a href="mailto:katrin_hofstetter(at)gmx(dot)de">Contact me</a>
-    </div>
+    </section>
 
 </main>
 
@@ -55,7 +79,6 @@
   </div>
  </footer>
 
-<script src="js/tota11y.min.js"></script>
 </div>
 </body>
 </html>
