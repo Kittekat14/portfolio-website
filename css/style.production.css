@@ -1,9 +1,17 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 body {
    background-color: #e0ffff;
+   color: #1F2123;
    font-family: 'Poppins', sans-serif;
    font-size: 16px;
    font-weight: 400;
@@ -24,10 +32,12 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 10px;
-  max-width: 100%;  /*very important that it spreads along the whole page-width at the start: the flex-items of this flex-container are .logo and .main-navigation*/
+  margin: 10px auto;
+  width: 100%;  /*very important that it spreads along the whole page-width at the start: the flex-items of this flex-container are .logo and .main-navigation*/
   max-height: 150px;
   background-color: #faf0e6;
+  position: sticky;
+  top: 0;
 }
 .logo {
   -webkit-box-flex: 0;
@@ -72,12 +82,10 @@ body {
 }
 .navigation-list__item:hover {
   color: #ff00ff;
-  font-size: larger;
   cursor: pointer;
 }
 .navigation-list__item:focus {
   color: #ff00ff;
-  font-size: larger;
   cursor: pointer;
 }
 .navigation-list__item:active {
@@ -116,8 +124,11 @@ a[role="menuitem"]:hover::before {
 
 .resume {
   text-decoration: none;
-  padding: 4px;
-  border-radius: 4px;
+  display: inline;
+  margin: 5px auto;
+  padding: 0.8rem;
+  border: 1px solid #c20ec2;
+  border-radius: 2rem;
   background-color: #c20ec2;
   font-family: inherit;
   font-size: inherit;
@@ -126,33 +137,32 @@ a[role="menuitem"]:hover::before {
 
 .career-path {
   text-decoration: none;
-  padding: 4px;
-  border-radius: 4px;
+  display: inline;
+  margin: 5px auto;
+  padding: 0.8rem;
+  border: 1px solid #c20ec2;
+  border-radius: 2rem;
   background-color: #c20ec2;
   font-family: inherit;
   font-size: inherit;
   color: #fff;
 }
 .resume {
-  -webkit-transition: 4s all ease-in-out 0.2s;
-  -o-transition: 4s all ease-in-out 0.2s;
-  transition: 4s all ease-in-out 0.2s;
+  -webkit-transition: 4s background-color ease-in-out 0.2s;
+  -o-transition: 4s background-color ease-in-out 0.2s;
+  transition: 4s background-color ease-in-out 0.2s;
 }
 .resume:hover {
-  padding: 8px;
-  font-size: larger;
-  font-weight: bold;
+  padding: 1rem;
   text-shadow: 2px 2px #ff00ff;
-  -webkit-box-shadow: 0 0 20px 6px #5f3587;
-          box-shadow: 0 0 20px 6px #5f3587;
+  -webkit-box-shadow: 0 0 10px 6px #5f3587;
+          box-shadow: 0 0 10px 6px #5f3587;
 }
 .resume:focus {
-  padding: 8px;
-  font-size: larger;
-  font-weight: bold;
+  padding: 1rem;
   text-shadow: 2px 2px #ff00ff;
-  -webkit-box-shadow: 0 0 20px 6px #5f3587;
-          box-shadow: 0 0 20px 6px #5f3587;
+  -webkit-box-shadow: 0 0 10px 6px #5f3587;
+          box-shadow: 0 0 10px 6px #5f3587;
 }
 .resume:active {
   color: #c20ec2;
@@ -163,9 +173,23 @@ a[role="menuitem"]:hover::before {
           box-shadow: 0 0 20px 1px #5f3587 inset;
 }
 .career-path:active {
-  border: 1px dotted #000;
+  border: 1px dotted #1F2123;
 }
-
+.link-to-animation {
+  display: inline;
+  margin: 5px auto;
+  padding: 0.8rem;
+  border: 1px solid #c20ec2;
+  border-radius: 2rem;
+  color: #1F2123;
+}
+.link-to-animation:hover {
+  background-color: #c20ec2;
+  text-shadow: 2px 2px #ff00ff;
+  -webkit-box-shadow: 0 0 10px 6px #5f3587;
+          box-shadow: 0 0 10px 6px #5f3587;
+  color: white;
+}
 
 
 /* start grid fallback (for browsers who don't support grid -->e.g. IE8/IE9)*/
@@ -241,18 +265,18 @@ a[role="menuitem"]:hover::before {
       background-color: #faf0e6;
       border-radius: 4px;
       padding: 6px;
-      border: none;
+      margin: 3px;
+      border: 1px solid #cdcdcd;
       -webkit-box-shadow: 0 2px 6px #5f3587;
               box-shadow: 0 2px 6px #5f3587;
       text-decoration: none;
       font-weight: bold;
       color: #5f3587;
+      display: inline-block;
     }
   .project-link:hover {
       background-color: #ff00ff;
-    }
-  .project-link {
-      display: inline-block;
+      border: none;
     }
   
    /*  Media Queries for Grid support */
@@ -269,6 +293,10 @@ a[role="menuitem"]:hover::before {
         -ms-grid-row-span: 1;
         grid-row: 7 / 8;
       }
+      .form-container {
+      max-width: 230px;
+      margin: 0 auto;
+      }
     }
     @media all and (min-width: 500px) and (max-width: 767px) {
       .project-list {
@@ -282,6 +310,10 @@ a[role="menuitem"]:hover::before {
         grid-column: 1 / 3;
         -ms-grid-row: 4;
         grid-row: 4 / 4;
+      }
+      .form-container {
+      max-width: 350px;
+      margin: 0 auto;
       }
     }
     @media all and (min-width: 768px) and (max-width: 1279px) {
@@ -297,6 +329,10 @@ a[role="menuitem"]:hover::before {
         -ms-grid-row: 3;
         -ms-grid-row-span: 1;
         grid-row: 3 / 4;
+      }
+      .form-container {
+      max-width: 450px;
+      margin: 0 auto;
       }
     }
     @media all and (min-width: 1280px) and (max-width: 1449px) {
@@ -380,8 +416,69 @@ tbody td {
     padding: 50px;
 }
 
-input {
-  margin: 2px;
+/*Contact Page*/
+
+.contact-section {
+	overflow:auto;
+}
+.form-container {
+  width: 850px;
+	margin: 0 auto;
+}
+#contact-form {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+	max-width: 600px;
+	margin: 0 auto;
+	border: 1px solid #c1c1c1;;
+	padding: 15px;
+	border-radius: 5px;
+	background-color: #eaeaea;
+	margin-bottom: 50px;
+}
+#contact-form label{
+	line-height: 2.7em;
+}
+
+#contact-form textarea{
+	min-height: 100px;
+	font-size: 14px;
+}
+.input-field{
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom:10px; 
+	background-color: white;
+	border-radius: 5px;
+	border:1px solid #c1c1c1;
+	font-size: 14px;
+}
+#submit-btn{
+	margin-top: 10px;
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom:10px; 
+	color: #fff;
+	background-color: black;
+	border:none;
+}
+.contact-info {
+  padding-bottom: 2rem;
+}
+.contact-info a {
+  color: black;
+  text-decoration: none;
+}
+.contact-info a:hover {
+  text-decoration: underline;
 }
 input[type="button"] {
   background-color: #c20ec2;
@@ -460,7 +557,7 @@ input[type="button"]:focus {
 /* shared code end */
 
 /* Smartphones */
-@media all and (max-width: 345px) {
+@media all and (max-width: 360px) {
   .navigation-list {
     display: block;
     position: absolute;
