@@ -123,11 +123,14 @@ a[role="menuitem"]:hover::before {
 
 .resume, .career-path {
   text-decoration: none;
-  display: inline-block;
+  display: inline;
   margin: 5px auto;
+  padding: 0.8rem;
   border: 1px solid var(--primary-link-color);
   border-radius: 2rem;
   background-color: var(--primary-link-color);
+  font-family: inherit;
+  font-size: inherit;
   color: var(--secondary-text-color);
 }
 .resume {
