@@ -209,6 +209,7 @@ a[role="menuitem"]:hover::before {
   .project-link:hover {
       background-color: var(--secondary-link-color);
       border: none;
+      color: whitesmoke;
     }
   
    /*  Media Queries for Grid support */

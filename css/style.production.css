@@ -277,6 +277,7 @@ a[role="menuitem"]:hover::before {
   .project-link:hover {
       background-color: #ff00ff;
       border: none;
+      color: whitesmoke;
     }
   
    /*  Media Queries for Grid support */
