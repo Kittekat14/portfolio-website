@@ -473,6 +473,18 @@ input[type="button"]:hover, input[type="button"]:focus {
   input[type="text"], input[type="email"], input[type="tel"] {
     width: 100%;
   }
+  .link-to-animation {
+		display: block;
+		font-size: smaller;
+  }
+  .resume {
+		display: block;
+		font-size: smaller;
+  }
+  .career-path {
+		display: block;
+    font-size: smaller;
+  }
 }
 @media all and (max-width: 499px) {
   body {
@@ -499,5 +511,17 @@ input[type="button"]:hover, input[type="button"]:focus {
   }
   tbody td {
     padding: 2px;
+  }
+	.link-to-animation {
+		display: block;
+		font-size: smaller;
+  }
+  .resume {
+		display: block;
+		font-size: smaller;
+  }
+  .career-path {
+		display: block;
+    font-size: smaller;
   }
 }
