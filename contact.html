@@ -37,23 +37,22 @@
   <section class="contact-section">
 		<div class="form-container">
 			<h3 style="text-align: center;">Get In Touch!</h3>
-      <div id="contact-form">
-        <!-- Die Konfiguration für den Formular-Chef -->
-        <form action="https://www.formular-chef.de/Formular-Chef.cgi" method="post" enctype="multipart/form-data">
-          
-          <input type="hidden" name="empfaenger" value="katihofstetter@gmail.com">
+      <form id="contact-form">       
 
           <label>Name</label>
-          <input class="input-field" type="text" name="name">
+          <input id="name" class="input-field" type="text" name="name">
 
           <label>Subject</label>
-          <input class="input-field" type="text" name="subject">
+          <input id="subject" class="input-field" type="text" name="subject">
+
+          <label>Phone Number</label>
+          <input id="phone" class="input-field" type="text" name="phone">
 
           <label>Email</label>
-          <input class="input-field" type="text" name="email">
+          <input id="email" class="input-field" type="text" name="email">
 
           <label>Message</label>
-          <textarea class="input-field" name="message"></textarea>
+          <textarea id="message" class="input-field" name="message"></textarea>
 
           <input id="submit-btn" type="submit" value="Send">
         </form>
@@ -80,7 +79,34 @@
  </footer>
 
 </div>
+
 <script src="https://kit.fontawesome.com/940c49595d.js" crossorigin="anonymous"></script>
+
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyDpwfjpLDiRbVu9eLIAwo69UlsxOvxbMd4",
+    authDomain: "portfolio-contact-form-aac9a.firebaseapp.com",
+    projectId: "portfolio-contact-form-aac9a",
+    storageBucket: "portfolio-contact-form-aac9a.appspot.com",
+    messagingSenderId: "8013450151",
+    appId: "1:8013450151:web:f5dfcbeb754a476c810482",
+    measurementId: "G-K9H1XTL521"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+
+<script src="main.js"></script>
 
 </body>
 </html>
