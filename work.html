@@ -1,121 +1,280 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Work Page</title>
-    <link rel="shortcut icon" href="img/favicon.ico">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"> 
-    
-    <link rel="stylesheet" type="text/css" href="css/style.production.css">
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
-</head>
+    <link rel="stylesheet" type="text/css" href="css/style.production.css" />
+  </head>
 
-<body>
+  <body>
+    <div class="site-container">
+      <header class="page-header">
+        <a href="index.html"
+          ><img
+            src="img/my-logo.png"
+            class="logo page-header__item"
+            alt="logo"
+            width="150"
+            aria-hidden="true"
+        /></a>
 
-<div class="site-container">
-<header class="page-header">
-  <a href="index.html"><img src="img/my-logo.png" class="logo page-header__item" alt="logo" width="150" aria-hidden="true"></a>
+        <nav class="main-navigation page-header__item">
+          <ul role="menubar" class="navigation-list">
+            <li role="presentation">
+              <a href="index.html" role="menuitem" class="navigation-list__item"
+                >Home</a
+              >
+            </li>
+            <li role="presentation">
+              <a href="about.html" role="menuitem" class="navigation-list__item"
+                >About Me</a
+              >
+            </li>
+            <li role="presentation">
+              <a
+                href="work.html"
+                role="menuitem"
+                class="navigation-list__item navigation-list__item--active"
+                >My Work</a
+              >
+            </li>
+            <li role="presentation">
+              <a
+                href="contact.html"
+                role="menuitem"
+                class="navigation-list__item"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </header>
 
-  <nav class="main-navigation page-header__item">
-    <ul role="menubar" class="navigation-list">
-      <li role="presentation"><a href="index.html" role="menuitem" class="navigation-list__item">Home</a></li>
-      <li role="presentation"><a href="about.html" role="menuitem" class="navigation-list__item">About Me</a></li>
-      <li role="presentation"><a href="work.html" role="menuitem" class="navigation-list__item navigation-list__item--active">My Work</a></li>
-      <li role="presentation"><a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a></li>
-    </ul>
- </nav>
-</header>
+      <section>
+        <h1>Work</h1>
+        <div class="project-list">
+          <div class="project-list__item">
+            <h3>JavaScript</h3>
+            <img src="img/Pokedex-App.PNG" alt="Pokédex-App" width="90%" />
+            <img
+              src="img/Pokedex-App-2.PNG"
+              alt="Pokédex-App-Modal-open"
+              width="90%"
+            />
+            <p>
+              I developed a small client-side web application using HTML, CSS
+              and JavaScript that loads data from an external API.
+            </p>
+            <a
+              class="project-link"
+              href="https://github.com/Kittekat14/simple-js-app"
+              target="_blank"
+              >See Project on GitHub</a
+            >
+            <a
+              class="project-link"
+              href="https://kittekat14.github.io/simple-js-app/#"
+              target="_blank"
+              >See Project on GitHub Pages</a
+            >
+          </div>
 
-<section>
+          <div class="project-list__item">
+            <h3>Node.js (Movie API)</h3>
+            <img src="img/Movie-API.PNG" alt="Movie-API-code" width="90%" />
+            <p>
+              Working with Node.js and other server-side frameworks like for
+              example ExpressJS, I built a REST API with URL endpoints, that
+              connect to data from a MongoDB Database, which I set up myself as
+              well. The API endpoints are tested in Postman. The API includes
+              user authentication and authorization as well as the business
+              logic layer using Mongoose. I incorporated server-side data
+              validation using the express-validator. The API is fully
+              documented using JSDoc and deployed on Heroku.
+            </p>
+            <a
+              class="project-link"
+              href="https://github.com/Kittekat14/movie_api"
+              target="_blank"
+              >See Project on GitHub</a
+            >
+          </div>
 
-  <h1>Work</h1>
-  <div class="project-list">
+          <div class="project-list__item">
+            <h3>React (Movie App)</h3>
+            <img
+              src="img/responsive-Movie-Website.PNG"
+              alt="React-Movie-App"
+              width="90%"
+            />
+            <p>
+              I used React and React Bootstrap to build the
+              single-page-application "ActorInspector" based on my existing
+              server-side code (my RESTful Movie-API and MongoDB database). In
+              the login and register forms, the user gets immediate feedback
+              about his filled in credentials (username and password) through
+              client-side validation. This Movie App includes routing between
+              different class and functional components and is responsive.
+            </p>
+            <a class="project-link" href="" target="_blank"
+              >See Project on GitHub</a
+            >
+          </div>
 
-    <div class="project-list__item">
-      <h3>JavaScript</h3>
-      <img src="img/Pokedex-App.PNG" alt="Pokédex-App" width="90%">
-      <img src="img/Pokedex-App-2.PNG" alt="Pokédex-App-Modal-open" width="90%">
-      <p>I developed a small client-side web application using HTML, CSS and JavaScript that loads data from an external API.
-      </p>
-      <a class="project-link" href="https://github.com/Kittekat14/simple-js-app" target="_blank">See Project on GitHub</a>
-      <a class="project-link" href="https://kittekat14.github.io/simple-js-app/#" target="_blank">See Project on GitHub Pages</a>
+          <div class="project-list__item">
+            <h3>Serverless, Progressive Web Application (PWA) "Meet"</h3>
+            <img
+              src="img/Final-Screenshot.PNG"
+              alt="Meet-App-Main-Page"
+              width="90%"
+            />
+            <p>
+              Inside a test-driven development environment, I created serverless
+              functions to get or refresh an access-token to the Google API. I
+              then build a PWA that reveives data about events from the Google
+              Calendar API. I added a scatterchart to visualize the data.
+            </p>
+            <a
+              class="project-link"
+              href="https://github.com/Kittekat14/meet-app/tree/4.9-Data"
+              target="_blank"
+              >See Project on GitHub</a
+            >
+            <a
+              class="project-link"
+              href="https://kittekat14.github.io/meet-app/"
+              target="_blank"
+              >See deployed version</a
+            >
+            <a
+              class="project-link"
+              href="https://www.youtube.com/watch?v=SzCM5vJKqQ8"
+              target="_blank"
+              >See Video-Demo on YouTube</a
+            >
+          </div>
+
+          <div class="project-list__item">
+            <h3>React Native Mobile Chat App</h3>
+            <img
+              src="img/React-Native-project.png"
+              alt="React-Native-Chat-App"
+              width="90%"
+            />
+            <p>
+              I built a Chat App using React Native, a React framework, that can
+              be bundled into Native code. Additionally, I used Expo.io as a
+              development environment to see the views on mobile devices. The
+              Chat App messages are being stored in the database "Firestore", a
+              service of Firebase. The sent images are stored in Firebase's
+              Cloud "Storage". It is optimized for both iOS and Android devices.
+            </p>
+            <a
+              class="project-link"
+              href="https://github.com/Kittekat14/texty-text"
+              target="_blank"
+              >See Project on GitHub</a
+            >
+          </div>
+
+          <div class="project-list__item">
+            <h3>Collaboration and Documentation</h3>
+            <img
+              src="img/Angular-Movie-App.PNG"
+              alt="Angular-MovieManiac-App"
+              width="90%"
+            />
+            <p>
+              I created a Movie App from the same self-made MovieAPI again, but
+              this time coding with the framework Angular instead of the library
+              React. Therefore, I was able to get introduced to TypeScript and
+              used Angular Material in the overall design layout. Additionally,
+              I added comments using TypeDoc and created a documentation with
+              this tool. I learned in this project how to effectively
+              collaborate with a wider product team, using tools like a kanban
+              board, user stories and user flows.
+            </p>
+            <a
+              class="project-link"
+              href="https://github.com/Kittekat14/MovieManiac"
+              target="_blank"
+              >See Project on GitHub</a
+            >
+            <a
+              class="project-link"
+              href="https://kittekat14.github.io/MovieManiac/welcome"
+              target="_blank"
+              >See deployed Project</a
+            >
+          </div>
+
+          <div class="project-list__item">
+            <h3>Your next project?</h3>
+            <p>
+              Do you need help in realizing a front-end or back-end project? I
+              can help you while using the following technologies:
+            </p>
+            <ul>
+              <li>HTML, CSS, JavaScript</li>
+              <li>ReactJS</li>
+              <li>React Native</li>
+              <li>Angular</li>
+              <li>NodeJS</li>
+            </ul>
+            <p>I'm also happy to learn other technologies if needed.</p>
+            <a class="project-link" href="mailto:katihofstetter@gmail.com"
+              >Contact me</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <footer class="page-footer">
+        <div class="fixed-footer">
+          <p>Find me on:</p>
+          <div class="social-media">
+            <a href="https://github.com/Kittekat14" target="_blank"
+              ><img
+                src="img/github_icon.svg"
+                alt="github"
+                width="30"
+                height="30"
+            /></a>
+            <a href="https://twitter.com/KatrinHofstett3" target="_blank"
+              ><img
+                src="img/twitter_icon.svg"
+                alt="twitter"
+                width="30"
+                height="30"
+            /></a>
+            <a
+              href="https://www.linkedin.com/in/katrin-hofstetter-25b945181/"
+              target="_blank"
+              ><img
+                src="img/linkedin_icon.svg"
+                alt="linkedin"
+                width="30"
+                height="30"
+            /></a>
+          </div>
+        </div>
+      </footer>
     </div>
-
-    <div class="project-list__item">
-    <h3>Node.js (Movie API)</h3>
-    <img src="img/Movie-API.PNG" alt="Movie-API-code" width="90%">
-    <p>Working with Node.js and other server-side frameworks like for example ExpressJS, I built a REST API with URL endpoints, that connect to data from a MongoDB Database, which I set up myself as well. The API endpoints are tested in Postman. The API includes user authentication and authorization as well as the business logic layer using Mongoose. I incorporated server-side data validation using the express-validator. The API is fully documented using JSDoc and deployed on Heroku.  
-    </p>
-    <a class="project-link" href="https://github.com/Kittekat14/movie_api" target="_blank">See Project on GitHub</a>
-    </div>
-
-    <div class="project-list__item">
-    <h3>React (Movie App)</h3>
-    <img src="img/responsive-Movie-Website.PNG" alt="React-Movie-App" width="90%" >
-    <p>I used React and React Bootstrap to build the single-page-application "ActorInspector" based on my existing server-side code (my RESTful Movie-API and MongoDB database). In the login and register forms, the user gets immediate feedback about his filled in credentials (username and password) through client-side validation. This Movie App includes routing between different class and functional components and is responsive.
-    </p>
-    <a class="project-link" href="" target="_blank">See Project on GitHub</a>
-    </div>
-
-    <div class="project-list__item">
-      <h3>Serverless, Progressive Web Application (PWA) "Meet"</h3>
-      <img src="img/Final-Screenshot.PNG" alt="Meet-App-Main-Page" width="90%">
-      <p>Inside a test-driven development environment, I created serverless functions to get or refresh an access-token to the Google API. I then build a PWA that reveives data about events from the Google Calendar API. I added a scatterchart to visualize the data.
-      </p>
-      <a class="project-link" href="https://github.com/Kittekat14/meet-app/tree/4.9-Data" target="_blank">See Project on GitHub</a>
-      <a class="project-link" href="https://kittekat14.github.io/meet-app/" target="_blank">See deployed version</a>
-      <a class="project-link" href="https://www.youtube.com/watch?v=SzCM5vJKqQ8" target="_blank">See Video-Demo on YouTube</a>
-    </div>
-
-    <div class="project-list__item">
-      <h3>React Native Mobile Chat App</h3>
-      <img src="img/React-Native-project.png" alt="React-Native-Chat-App" width="90%" >
-      <p>I built a Chat App using React Native, a React framework, that can be bundled into Native code. Additionally, I used Expo.io as a development environment to see the views on mobile devices. The Chat App messages are being stored in the database "Firestore", a service of Firebase. The sent images are stored in Firebase's Cloud "Storage". It is optimized for both iOS and Android devices.
-      </p>
-      <a class="project-link" href="https://github.com/Kittekat14/texty-text" target="_blank">See Project on GitHub</a>
-    </div>
-
-    <div class="project-list__item">
-      <h3>Collaboration and Documentation</h3>
-      <img src="img/Angular-Movie-App.PNG" alt="Angular-MovieManiac-App" width="90%">
-      <p>I created a Movie App from the same self-made MovieAPI again, but this time coding with the framework Angular instead of the library React. Therefore, I was able to get introduced to TypeScript and used Angular Material in the overall design layout. Additionally, I added comments using TypeDoc and created a documentation with this tool. I learned in this project how to effectively collaborate with a wider product team, using tools like a kanban board, user stories and user flows.
-      </p>
-      <a class="project-link" href="https://github.com/Kittekat14/MovieManiac" target="_blank">See Project on GitHub</a>
-      <a class="project-link" href="https://kittekat14.github.io/MovieManiac/welcome" target="_blank">See deployed Project</a>
-    </div>
-
-    <div class="project-list__item">
-      <h3>Your next project?</h3>
-      <p>Do you need help in realizing a front-end or back-end project? I can help you while using the following technologies:</p>
-        <ul>
-          <li>HTML, CSS, JavaScript</li>
-          <li>ReactJS</li>
-          <li>React Native</li>
-          <li>AngularJS</li>
-          <li>NodeJS</li>
-        </ul> 
-        <p>I'm also happy to learn other technologies if needed.</p>
-        <a class="project-link" href="mailto:katihofstetter@gmail.com">Contact me</a>
-    </div>
-
-  </div>
-</section>
-
-<footer class="page-footer">
-  <div class="fixed-footer">
-   <p>Find me on: </p>
-   <div class="social-media">
-   <a href="https://github.com/Kittekat14" target="_blank"><img src="img/github_icon.svg" alt="github" width="30" height="30"></a>
-   <a href="https://twitter.com/KatrinHofstett3" target="_blank"><img src="img/twitter_icon.svg" alt="twitter" width="30" height="30"></a>
-   <a href="https://www.linkedin.com/in/katrin-hofstetter-25b945181/" target="_blank"><img src="img/linkedin_icon.svg" alt="linkedin" width="30" height="30"></a>
-   </div>
-  </div>
- </footer>
-
-</div>
-</body>
+  </body>
 </html>
