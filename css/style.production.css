@@ -516,6 +516,7 @@ input[type="button"]:focus {
   width: 100%;
   background-color: #dcdcdc;
   bottom: 0;
+  min-height: 100%;
 }
 .impressum {
   color: #000;
