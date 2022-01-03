@@ -509,14 +509,20 @@ input[type="button"]:focus {
   -ms-flex-align: center;
   align-items: center;
 }
-.fixed-footer {
+.my-footer {
   -webkit-box-flex: 0;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
   width: 100%;
   background-color: #dcdcdc;
-  position: fixed;
   bottom: 0;
+}
+.impressum {
+  color: #000;
+  text-decoration: none;
+}
+.impressum:hover {
+  color: #c20ec2;
 }
 
 /* shared code start */

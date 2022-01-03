@@ -1,113 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Page</title>
-    <link rel="shortcut icon" href="img/favicon.ico">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="stylesheet" type="text/css" href="css/style.production.css">
-   
-</head>
+    <link rel="stylesheet" type="text/css" href="css/style.production.css" />
+  </head>
 
-<body>
+  <body>
+    <div class="site-container">
+      <header class="page-header">
+        <a href="index.html"
+          ><img
+            src="img/my-logo.png"
+            class="logo page-header__item"
+            alt="logo"
+            width="150"
+            aria-hidden="true"
+        /></a>
+        <nav class="main-navigation page-header__item">
+          <ul role="menubar" class="navigation-list">
+            <li role="presentation">
+              <a href="index.html" role="menuitem" class="navigation-list__item"
+                >Home</a
+              >
+            </li>
+            <li role="presentation">
+              <a href="about.html" role="menuitem" class="navigation-list__item"
+                >About Me</a
+              >
+            </li>
+            <li role="presentation">
+              <a href="work.html" role="menuitem" class="navigation-list__item"
+                >My Work</a
+              >
+            </li>
+            <li role="presentation">
+              <a
+                href="contact.html"
+                role="menuitem"
+                class="navigation-list__item navigation-list__item--active"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </header>
 
-<div class="site-container">
+      <main>
+        <h1>Contact</h1>
 
-<header class="page-header">
- <a href="index.html"><img src="img/my-logo.png" class="logo page-header__item" alt="logo" width="150" aria-hidden="true"></a>
- <nav class="main-navigation page-header__item">
-  <ul role="menubar" class="navigation-list">
-    <li role="presentation"><a href="index.html" role="menuitem" class="navigation-list__item">Home</a></li>
-    <li role="presentation"><a href="about.html" role="menuitem" class="navigation-list__item">About Me</a></li>
-    <li role="presentation"><a href="work.html" role="menuitem" class="navigation-list__item">My Work</a></li>
-    <li role="presentation"><a href="contact.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Contact</a></li>
-  </ul>
-</nav>
-</header>
+        <section class="contact-section">
+          <div class="form-container">
+            <h3 style="text-align: center">Get In Touch!</h3>
 
-<main>
+            <form
+              action="https://formsubmit.co/966b1e17cd357e9a35f41d16933120d2"
+              method="POST"
+              id="contact-form"
+            >
+              <label>Name</label>
+              <input
+                id="name"
+                class="input-field"
+                type="text"
+                name="name"
+                required
+              />
+              <input
+                type="hidden"
+                name="_next"
+                value="https://kittekat14.github.io/portfolio-website/thank-you.html"
+              />
+              <label>Subject</label>
+              <input
+                id="subject"
+                class="input-field"
+                type="text"
+                name="subject"
+              />
 
-  <h1>Contact</h1>
-  
-  <section class="contact-section">
-		<div class="form-container">
-			<h3 style="text-align: center;">Get In Touch!</h3>
+              <label>Phone Number</label>
+              <input id="phone" class="input-field" type="text" name="phone" />
 
-      <form action="https://formsubmit.co/966b1e17cd357e9a35f41d16933120d2" method="POST" id="contact-form">
-          <label>Name</label>
-          <input id="name" class="input-field" type="text" name="name" required>
-          <input type="hidden" name="_next" value="https://kittekat14.github.io/portfolio-website/thank-you.html" >
-          <label>Subject</label>
-          <input id="subject" class="input-field" type="text" name="subject">
+              <label>Email</label>
+              <input
+                id="email"
+                class="input-field"
+                type="text"
+                name="email"
+                required
+              />
 
-          <label>Phone Number</label>
-          <input id="phone" class="input-field" type="text" name="phone">
+              <label>Message</label>
+              <textarea
+                id="message"
+                class="input-field"
+                name="message"
+                required
+              ></textarea>
 
-          <label>Email</label>
-          <input id="email" class="input-field" type="text" name="email" required>
+              <input id="submit-btn" type="submit" value="Send" />
+            </form>
+          </div>
+        </section>
 
-          <label>Message</label>
-          <textarea id="message" class="input-field" name="message" required></textarea>
-          
-          <input id="submit-btn" type="submit" value="Send">
-      </form>
+        <section class="contact-info">
+          <a
+            href="mailto:katihofstetter(at)gmail(dot)com?subject=Job Offer or Job Request"
+            ><i class="fas fa-at"></i> katihofstetter@gmail.com
+          </a>
+          <br />
+          <a href="skype:toasthawwai"
+            ><i class="fab fa-skype"></i> toasthawwai
+          </a>
+          <br />
+        </section>
+      </main>
 
-		  </div>
-	</section>
+      <footer class="page-footer">
+        <div class="my-footer">
+          <p>Find me on:</p>
+          <div class="social-media">
+            <a href="https://github.com/Kittekat14" target="_blank"
+              ><img
+                src="img/github_icon.svg"
+                alt="github"
+                width="30"
+                height="30"
+            /></a>
+            <a href="https://twitter.com/KatrinHofstett3" target="_blank"
+              ><img
+                src="img/twitter_icon.svg"
+                alt="twitter"
+                width="30"
+                height="30"
+            /></a>
+            <a
+              href="https://www.linkedin.com/in/katrin-hofstetter-25b945181/"
+              target="_blank"
+              ><img
+                src="img/linkedin_icon.svg"
+                alt="linkedin"
+                width="30"
+                height="30"
+            /></a>
+          </div>
+          <div>
+            <p>&#169; Katrin Hofstetter, 2022</p>
+            <p>
+              All rights reserved. |
+              <a href="impressum.html" class="impressum">Impressum</a>
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
 
+    <script
+      src="https://kit.fontawesome.com/940c49595d.js"
+      crossorigin="anonymous"
+    ></script>
 
-    <section class="contact-info">
-        <a href="mailto:katihofstetter(at)gmail(dot)com?subject=Job Offer or Job Request"><i class="fas fa-at"></i> katihofstetter@gmail.com </a> <br>
-        <a href="skype:toasthawwai"><i class="fab fa-skype"></i> toasthawwai </a> <br>
-    </section>
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.0/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.0/firebase-analytics.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
 
-</main>
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyDpwfjpLDiRbVu9eLIAwo69UlsxOvxbMd4",
+        authDomain: "portfolio-contact-form-aac9a.firebaseapp.com",
+        projectId: "portfolio-contact-form-aac9a",
+        storageBucket: "portfolio-contact-form-aac9a.appspot.com",
+        messagingSenderId: "8013450151",
+        appId: "1:8013450151:web:f5dfcbeb754a476c810482",
+        measurementId: "G-K9H1XTL521",
+      };
 
-<footer class="page-footer">
-  <div class="fixed-footer">
-   <p>Find me on: </p>
-   <div class="social-media">
-   <a href="https://github.com/Kittekat14" target="_blank"><img src="img/github_icon.svg" alt="github" width="30" height="30"></a>
-   <a href="https://twitter.com/KatrinHofstett3" target="_blank"><img src="img/twitter_icon.svg" alt="twitter" width="30" height="30"></a>
-   <a href="https://www.linkedin.com/in/katrin-hofstetter-25b945181/" target="_blank"><img src="img/linkedin_icon.svg" alt="linkedin" width="30" height="30"></a>
-   </div>
-  </div>
- </footer>
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    </script>
 
-</div>
-
-<script src="https://kit.fontawesome.com/940c49595d.js" crossorigin="anonymous"></script>
-
-<script type="module">
-  // Import the functions you need from the SDKs you need
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.0/firebase-app.js";
-  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.0/firebase-analytics.js";
-  // TODO: Add SDKs for Firebase products that you want to use
-  // https://firebase.google.com/docs/web/setup#available-libraries
-
-  // Your web app's Firebase configuration
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-  const firebaseConfig = {
-    apiKey: "AIzaSyDpwfjpLDiRbVu9eLIAwo69UlsxOvxbMd4",
-    authDomain: "portfolio-contact-form-aac9a.firebaseapp.com",
-    projectId: "portfolio-contact-form-aac9a",
-    storageBucket: "portfolio-contact-form-aac9a.appspot.com",
-    messagingSenderId: "8013450151",
-    appId: "1:8013450151:web:f5dfcbeb754a476c810482",
-    measurementId: "G-K9H1XTL521"
-  };
-
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
-  const analytics = getAnalytics(app);
-</script>
-
-<script src="main.js"></script>
-
-</body>
+    <script src="main.js"></script>
+  </body>
 </html>
